@@ -19,7 +19,7 @@ Run from terminal:
 `bash 'phpswitch.sh'`
 
 This will list all installed php version.
-Enter your php version to switch to.
+Enter the php version to switch to.
 Apache is restarted automatically!
 Done!
 
