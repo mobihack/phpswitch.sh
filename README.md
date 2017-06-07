@@ -3,7 +3,9 @@ Switch PHP version using bash!
 
 ## Requirements
 sudo (restart apache2 & create symlinks)
+
 Install php and mod_php(apache2) for all needed php versions.
+
 Apache a2dismod & a2enmod is needed!
 
 ## Install
