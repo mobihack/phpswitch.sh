@@ -1,5 +1,6 @@
-# phpversionswitcher
-Switch PHP version using bash!
+# phpswitch.sh
+
+Bash script to switch the php version linked in bin!
 
 ## Requirements
 
