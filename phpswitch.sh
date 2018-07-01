@@ -42,10 +42,15 @@ if [ "$returnVal" -eq "0" ]
 		   		fi
 			done
 		sudo a2enmod "php$NUM"
-		sudo rm /usr/bin/php
-		sudo ln -sf /usr/bin/"php$NUM" /usr/bin/php
+		
+		sudo update-alternatives --set php /usr/bin/"php$NUM"
+		sudo update-alternatives --set phar /usr/bin/"phar$NUM"
+		sudo update-alternatives --set phar.phar /usr/bin/"phar.phar$NUM"
+		sudo update-alternatives --set phpize /usr/bin/"phpize$NUM"
+		sudo update-alternatives --set php-config /usr/bin/"php-config$NUM"
+		
 		echo "Restarting Apache:"
-		sudo systemctl restart apache2
+		sudo service apache2 restart
 		echo "--------------------"
 		echo "SWITCH DONE"
 	else
