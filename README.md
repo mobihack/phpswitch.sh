@@ -1,6 +1,6 @@
 # phpswitch.sh
 
-![phpswitch.sh banner](./docs/phpswitch.sh.png)
+![phpswitch.sh banner](./docs/phpswitch.sh.png?v=2)
 
 Bash script to switch the php version linked in bin!
 
